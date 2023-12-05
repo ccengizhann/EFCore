@@ -8,27 +8,12 @@ using System.Threading.Tasks;
 
 namespace Frameworks.Entities
 {
-    public class Customer
+    public class Category
     {
-        public Customer( string name, string country)
-        {
-          
-            Name = name;
-            Country = country;
-        }
-
-      
-
+        public int Id { get; set; }
         public string Name { get; set; }
-
-        public string Country { get; set; }
-
+        public List<Product> Products { get; set; }
 
 
-      
     }
-
-
-
-
 }
